@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<item
+    android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+    android:id="@+id/lenta_vert"
+    tools:ignore="MenuTitle">
+</item>
+
+    <item
+        android:icon="@drawable/ic_content_copy_black_24dp"
+        tools:ignore="MenuTitle"
+        android:id="@+id/lenta_horiz">
+
+    </item>
+
+</menu>

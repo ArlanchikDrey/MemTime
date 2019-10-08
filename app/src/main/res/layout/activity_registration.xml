@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/registration_background">
+
+   <RelativeLayout
+       android:layout_marginTop="45dp"
+       android:layout_width="match_parent"
+       android:layout_height="170dp">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/circle"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_gravity="center_horizontal"
+           android:src="@drawable/add_image"
+           />
+   </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/what_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/editTextName"
+        android:inputType="textPersonName|textCapWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:hint="@string/name"
+        android:textStyle="normal" />
+    <EditText
+        android:id="@+id/editTextfamily"
+        android:inputType="textPersonName|textCapWords"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:hint="@string/family"
+        android:textStyle="normal" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="48dp"
+            android:text="Через почту"
+            android:textColor="@color/colorWhite" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox"
+            android:layout_alignBottom="@+id/checkBox"
+            android:layout_marginStart="54dp"
+            android:layout_toEndOf="@+id/checkBox"
+            android:text="Через номер"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/button_color"
+        android:enabled="false"
+        android:gravity="center"
+        android:onClick="nextActivity"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:onClick="onClickBack"
+        android:text="@string/back" />
+</LinearLayout>

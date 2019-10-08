@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="@color/white"
+    android:layout_marginRight="8dp"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/comment_avatar"
+                android:layout_width="68dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/text_name"
+                android:layout_marginEnd="-72dp"
+                android:layout_toStartOf="@+id/text_comment"
+                android:scaleType="centerCrop"
+              />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="80dp"
+                android:textSize="15sp"
+               android:textColor="#6E6E6E"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/textTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/comment_avatar"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/text_comment"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text_name"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#5C5C5C"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/like_btn_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/lineview"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/like_unpress_mini" />
+
+            <TextView
+                android:id="@+id/text_likescomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text_comment"
+                android:layout_marginRight="3dp"
+                android:layout_toStartOf="@+id/like_btn_comment"
+                android:textSize="11sp" />
+
+
+            <View
+                android:id="@+id/lineview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/text_comment"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/toolbar_dropshadow" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+

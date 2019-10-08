@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_background2">
+
+    <EditText
+        android:id="@+id/rEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="168dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/rPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/rPasswordRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="@string/passwordRepeat"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnRegAct"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rPasswordRepeat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/textColorBold"
+        android:text="@string/regist"
+        android:onClick="onClickReg" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnRegAct"
+        android:layout_centerHorizontal="true"
+        android:text="Назад"
+        android:onClick="onClickBack" />
+
+
+</RelativeLayout>

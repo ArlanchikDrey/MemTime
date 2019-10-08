@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <android.support.v7.widget.CardView
+                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:layout_marginRight="18dp"
+                 android:layout_marginLeft="18dp"
+                 android:layout_marginTop="28dp"
+                 card_view:cardBackgroundColor="#32ffffff"
+                 card_view:cardCornerRadius="20dp"
+                 card_view:cardElevation="2dp">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     >
+
+                     <FrameLayout
+                         android:layout_marginTop="3dp"
+                         android:layout_marginLeft="20dp"
+                         android:layout_width="match_parent"
+                         android:layout_toLeftOf="@id/relative_2933"
+                         android:layout_marginRight="15dp"
+                         android:layout_height="wrap_content"
+                         android:focusable="true"
+                         android:focusableInTouchMode="true">
+
+                         <AutoCompleteTextView
+                             android:id="@+id/AutoCompleteTextView"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:completionThreshold="1"
+                             android:hint="#поиск по тэгам"
+                             android:layout_marginTop="2dp"
+                             android:background="@android:color/transparent"
+                             android:maxLines="1"
+
+                             />
+
+                     </FrameLayout>
+                     <RelativeLayout
+                         android:id="@+id/relative_2933"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp"
+                         android:background="#3EBFF4"
+                         android:layout_alignParentEnd="true"
+                         >
+
+                         <ImageButton
+                             android:id="@+id/btn_seatch"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerHorizontal="true"
+                             android:layout_centerVertical="true"
+                             android:background="@android:color/transparent"
+                             android:src="@drawable/ic_search_white_dp" />
+
+                     </RelativeLayout>
+
+
+                 </RelativeLayout>
+
+             </android.support.v7.widget.CardView>
+
+             <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="60dp"
+                 >
+                 <ProgressBar
+                     android:id="@+id/progressBar"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"/>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     >
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Популярное"
+                         android:fontFamily="sans-serif-condensed"
+                         android:textAlignment="center"
+                         android:textAllCaps="true"
+                         android:textColor="#1faee9"
+                         android:textSize="22sp"
+                         android:textStyle="bold"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginBottom="5dp"
+                         />
+
+                     <TextView
+                         android:id="@+id/textView_change"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="20dp"
+                         android:textColor="#3EBFF4"/>
+
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/recyclerhomepop"
+                         android:layout_width="match_parent"
+                         android:layout_height="233dp">
+
+                     </android.support.v7.widget.RecyclerView>
+
+
+                 </LinearLayout>
+
+             </FrameLayout>
+
+             <LinearLayout
+                 android:layout_marginTop="20dp"
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <android.support.v7.widget.CardView
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     app:cardBackgroundColor="#EDECE8"
+                     app:cardCornerRadius="7dp"
+                     app:cardElevation="4dp">
+
+                     <TextView
+                         android:id="@+id/textTag1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingBottom="2dp"
+                         android:paddingLeft="3dp"
+                         android:paddingRight="3dp"
+                         android:paddingTop="2dp"
+                         android:text="#тут скоро что то будет 💋 "
+                         android:textSize="14sp"
+                         android:textStyle="bold" />
+
+                 </android.support.v7.widget.CardView>
+                 <android.support.v7.widget.RecyclerView
+                     android:id="@+id/viewTag1"
+                     android:layout_marginTop="10dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:scrollbars="horizontal"
+                     android:orientation="horizontal">
+
+                 </android.support.v7.widget.RecyclerView>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_marginTop="20dp"
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <android.support.v7.widget.CardView
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     app:cardBackgroundColor="#EDECE8"
+                     app:cardCornerRadius="7dp"
+                     app:cardElevation="4dp">
+
+                     <TextView
+                         android:id="@+id/textTag2"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingBottom="2dp"
+                         android:paddingLeft="3dp"
+                         android:paddingRight="3dp"
+                         android:paddingTop="2dp"
+                         android:text="#тут скоро что то будет 💋 "
+                         android:textSize="14sp"
+                         android:textStyle="bold" />
+
+                 </android.support.v7.widget.CardView>
+                 <android.support.v7.widget.RecyclerView
+                     android:id="@+id/viewTag2"
+                     android:layout_marginTop="10dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:scrollbars="horizontal"
+                     android:orientation="horizontal">
+
+                 </android.support.v7.widget.RecyclerView>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_marginTop="20dp"
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <android.support.v7.widget.CardView
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     app:cardBackgroundColor="#EDECE8"
+                     app:cardCornerRadius="7dp"
+                     app:cardElevation="4dp">
+
+                     <TextView
+                         android:id="@+id/textTag3"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingBottom="2dp"
+                         android:paddingLeft="3dp"
+                         android:paddingRight="3dp"
+                         android:paddingTop="2dp"
+                         android:text="#тут скоро что то будет 💋 "
+                         android:textSize="14sp"
+                         android:textStyle="bold" />
+
+                 </android.support.v7.widget.CardView>
+                 <android.support.v7.widget.RecyclerView
+                     android:id="@+id/viewTag3"
+                     android:layout_marginTop="10dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:scrollbars="horizontal"
+                     android:orientation="horizontal">
+
+                 </android.support.v7.widget.RecyclerView>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_marginTop="20dp"
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <android.support.v7.widget.CardView
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     app:cardBackgroundColor="#EDECE8"
+                     app:cardCornerRadius="7dp"
+                     app:cardElevation="4dp">
+
+                     <TextView
+                         android:id="@+id/textTag4"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingBottom="2dp"
+                         android:paddingLeft="3dp"
+                         android:paddingRight="3dp"
+                         android:paddingTop="2dp"
+                         android:text="#тут скоро что то будет 💋 "
+                         android:textSize="14sp"
+                         android:textStyle="bold" />
+
+                 </android.support.v7.widget.CardView>
+                 <android.support.v7.widget.RecyclerView
+                     android:id="@+id/viewTag4"
+                     android:layout_marginTop="10dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:scrollbars="horizontal"
+                     android:orientation="horizontal">
+
+                 </android.support.v7.widget.RecyclerView>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_marginTop="20dp"
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <android.support.v7.widget.CardView
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     app:cardBackgroundColor="#EDECE8"
+                     app:cardCornerRadius="7dp"
+                     app:cardElevation="4dp">
+
+                     <TextView
+                         android:id="@+id/textTag5"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingBottom="2dp"
+                         android:paddingLeft="3dp"
+                         android:paddingRight="3dp"
+                         android:paddingTop="2dp"
+                         android:text="#тут скоро что то будет 💋 "
+                         android:textSize="14sp"
+                         android:textStyle="bold" />
+
+                 </android.support.v7.widget.CardView>
+                 <android.support.v7.widget.RecyclerView
+                     android:id="@+id/viewTag5"
+                     android:layout_marginTop="10dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:scrollbars="horizontal"
+                     android:orientation="horizontal">
+
+                 </android.support.v7.widget.RecyclerView>
+             </LinearLayout>
+
+
+
+
+         </LinearLayout>
+
+     </ScrollView>
+
+</FrameLayout>

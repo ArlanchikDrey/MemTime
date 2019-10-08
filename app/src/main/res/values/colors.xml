@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003347</color>
+    <color name="colorPrimaryDark">#80cbc4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorBold">#7fc7ff</color>
+    <color name="button_color">#004d66</color>
+    <color name="colorWhite">#ffff</color>
+    <color name="grey">#E9EDF5</color>
+    <color name ="white">#FFFFFF</color>
+    <color name="tag_color">#808080</color>
+
+    <color name="statusBarWelcome">#9ad3ff</color>
+</resources>

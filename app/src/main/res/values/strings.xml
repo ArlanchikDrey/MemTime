@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">MemTime</string>
+    <string name="hello">Привет!</string>
+    <string name="right">Все права защищены ©</string>
+    //welcome
+    <string name="welcome">Добро пожаловать в</string>
+    <string name="next">Продолжить</string>
+    <string name="back">Назад</string>
+    //Авторизация
+    <string name="sign">Вход</string>
+    <string name="regist">Регистрация</string>
+    <string name="google">Войдите с помощью</string>
+    <string name="email">Эл.почта</string>
+    <string name="password">Пароль</string>
+    <string name="passwordRepeat">Повторите пароль</string>
+    <string name="forgot">Забыли пароль?</string>
+    <string name="getemail">Введите ваше зарегистрированное письмо для отправки инструкции по сбросу пароля</string>
+    <string name="resetpass">Сбросить пароль</string>
+    <string name="phone">Введите номер</string>
+    <string name="phonemoney">Мобильный оператор может взимать плату за SMS</string>
+    <string name="code">Введите код</string>
+    //Регистрация
+    <string name="what_name">Введи свое имя и фамилию</string>
+    <string name="name">Имя</string>
+    <string name="family">Фамилия</string>
+    //Ошибки
+    <string name="error_weak_password">Слишком простой пароль</string>
+    <string name="error_invalid_email">Неверный формат Email</string>
+    <string name="error_user_exists">Такой пользователь уже существует</string>
+    <string name="emptyMail">Введите Email</string>
+    <string name="emptyPass">Введите пароль</string>
+    <string name="equalPass">Пароли не совпадают</string>
+
+
+    <!-- Стринги для главной навигации -->
+    <string name="title_home">Домой</string>
+    <string name="title_dashboard">Лента</string>
+    <string name="title_notifications">Mой аккаунт </string>
+    <!-- Стринги для навигации аккаунта -->
+    <string name="title_mems">Избранное</string>
+    <!-- Стринги для комментов -->
+    <string name="title_comment">Комменты</string>
+    <string name="user_comment">Ваш коммент</string>
+    <!-- Стринги для настроек -->
+    <string name="title_activity_settings">Настройки</string>
+    <string name="set_account">Профиль</string>
+    <string name="set_account4">Удалить аккаунт</string>
+    <string name="set_account5">Выйти из аккаунта</string>
+    <string name="set_account6">Помощь</string>
+    <string name="set_account7">О приложении</string>
+    <string name="help_text">
+        \n
+        При возникновении любых вопросов,связанных с
+        работоспособностью приложения и иным причинам,
+        пишите на почту: arlanchikdrey@yandex.ru\n
+        Ответ на ваш вопрос вы получите в самое кратчайшее  время.
+    </string>
+    <!-- Стринги для домашней страницы -->
+    <string name="pop">Популярное</string>
+    <string name="recommend">Рекомендуемое</string>
+    <string name="app_description">время мемов</string>
+    <string name="news">Новости</string>
+    <string name="Recommendations">Рекомендации</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1088128437541",
+    "firebase_url": "https://membots-5d9df.firebaseio.com",
+    "project_id": "membots-5d9df",
+    "storage_bucket": "membots-5d9df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088128437541:android:ad96cab19e6e9274",
+        "android_client_info": {
+          "package_name": "com.arlhar_membots"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088128437541-eptajqrla4cicto72v8mdluklfbh9t6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arlhar_membots",
+            "certificate_hash": "3ad4e5640288b47b286fa6bd96c0cbdd598ce311"
+          }
+        },
+        {
+          "client_id": "1088128437541-nrugt5vhds4e3bqn0pdv1db5e6t80sp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrV0qGDEAjLywVlkZTPugRvHZ459eZTo0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088128437541-nrugt5vhds4e3bqn0pdv1db5e6t80sp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
